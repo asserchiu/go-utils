@@ -1,0 +1,20 @@
+goos: linux
+goarch: amd64
+pkg: github.com/asserchiu/go-utils/strconcator
+Benchmark_10_PlusEqual-4                       	 2000000	       876 ns/op	     208 B/op	       9 allocs/op
+Benchmark_10_StringConcator_WriteString-4      	 5000000	       326 ns/op	      88 B/op	       4 allocs/op
+Benchmark_10_StringConcator_WriteStrings-4     	 2000000	       757 ns/op	      88 B/op	       4 allocs/op
+Benchmark_10_BytesBuffer-4                     	 5000000	       380 ns/op	     144 B/op	       2 allocs/op
+Benchmark_10_StringsBuilder-4                  	 5000000	       231 ns/op	      56 B/op	       3 allocs/op
+Benchmark_100_PlusEqual-4                      	  100000	     18229 ns/op	   16016 B/op	      99 allocs/op
+Benchmark_100_StringConcator_WriteString-4     	 1000000	      1675 ns/op	    1048 B/op	       8 allocs/op
+Benchmark_100_StringConcator_WriteStrings-4    	  200000	      5775 ns/op	    1048 B/op	       8 allocs/op
+Benchmark_100_BytesBuffer-4                    	  500000	      3128 ns/op	    1440 B/op	       5 allocs/op
+Benchmark_100_StringsBuilder-4                 	 1000000	      1560 ns/op	    1016 B/op	       7 allocs/op
+Benchmark_1000_PlusEqual-4                     	    2000	    743692 ns/op	 1602960 B/op	     999 allocs/op
+Benchmark_1000_StringConcator_WriteString-4    	  200000	     10989 ns/op	   10264 B/op	      12 allocs/op
+Benchmark_1000_StringConcator_WriteStrings-4   	   30000	     50114 ns/op	   10520 B/op	      13 allocs/op
+Benchmark_1000_BytesBuffer-4                   	   50000	     24058 ns/op	   12512 B/op	       8 allocs/op
+Benchmark_1000_StringsBuilder-4                	  200000	      9753 ns/op	   10232 B/op	      11 allocs/op
+PASS
+ok  	github.com/asserchiu/go-utils/strconcator	28.257s

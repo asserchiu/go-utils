@@ -1,8 +1,12 @@
 package strconcator
 
+import (
+	"strings"
+)
+
 // StringConcator the string concatenation helper
 type StringConcator struct {
-	raw []byte
+	strings.Builder
 }
 
 // New create a new StringConcator and append string(s)
@@ -14,20 +18,25 @@ func New(ss ...string) (sc *StringConcator) {
 
 // WriteString append a string to the StringConcator
 // Impl. stringWriter interface
-func (r *StringConcator) WriteString(s string) (n int, err error) {
-	r.raw = append(r.raw, s...)
-	return len(s), nil
+func (sc *StringConcator) WriteString(s string) (n int, err error) {
+	return sc.Builder.WriteString(s)
 }
 
 // WriteStrings append a list(slice) of string to the StringConcator
-func (r *StringConcator) WriteStrings(ss ...string) {
+func (sc *StringConcator) WriteStrings(ss ...string) (n int, err error) {
+	var l = 0
 	for _, s := range ss {
-		r.raw = append(r.raw, s...)
+		sc.Builder.WriteString(s)
+		if err != nil {
+			return l, err
+		}
+		l += len(s)
 	}
+	return l, nil
 }
 
 // String return the string content of the StringConcator
 // Impl. Stringer interface
-func (r *StringConcator) String() string {
-	return string(r.raw)
+func (sc *StringConcator) String() string {
+	return sc.Builder.String()
 }
