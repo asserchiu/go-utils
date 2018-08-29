@@ -1,0 +1,12 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/asserchiu/go-utils/strconcator
+Benchmark_GTG34_Basic-4                       	10000000	       112 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_AvoidCompilerOptimization-4   	10000000	       114 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_Loops-4                       	  500000	      2251 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_LoopsWrong-4                  	   10000	   4803541 ns/op	27121295 B/op	      30 allocs/op
+Benchmark_GTG34_MoreCase_10-4                 	  500000	      2343 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_MoreCase_100-4                	   20000	     82677 ns/op	  287040 B/op	     299 allocs/op
+Benchmark_GTG34_MoreCase_1000-4               	     200	   6688279 ns/op	28606401 B/op	    2999 allocs/op
+PASS
+ok  	github.com/asserchiu/go-utils/strconcator	57.569s

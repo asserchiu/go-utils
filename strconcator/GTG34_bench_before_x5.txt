@@ -1,0 +1,40 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/asserchiu/go-utils/strconcator
+Benchmark_GTG34_Basic-4                       	10000000	       114 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_Basic-4                       	10000000	       113 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_Basic-4                       	10000000	       113 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_Basic-4                       	10000000	       115 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_Basic-4                       	10000000	       113 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_AvoidCompilerOptimization-4   	10000000	       114 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_AvoidCompilerOptimization-4   	10000000	       120 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_AvoidCompilerOptimization-4   	10000000	       115 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_AvoidCompilerOptimization-4   	10000000	       115 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_AvoidCompilerOptimization-4   	10000000	       120 ns/op	      48 B/op	       2 allocs/op
+Benchmark_GTG34_Loops-4                       	  500000	      2256 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_Loops-4                       	  500000	      2327 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_Loops-4                       	  500000	      2434 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_Loops-4                       	  500000	      2337 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_Loops-4                       	  500000	      3031 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_LoopsWrong-4                  	   10000	   5256049 ns/op	27121295 B/op	      30 allocs/op
+Benchmark_GTG34_LoopsWrong-4                  	   10000	   5035980 ns/op	27121295 B/op	      30 allocs/op
+Benchmark_GTG34_LoopsWrong-4                  	   10000	   5268800 ns/op	27121293 B/op	      30 allocs/op
+Benchmark_GTG34_LoopsWrong-4                  	   10000	   5668640 ns/op	27121293 B/op	      30 allocs/op
+Benchmark_GTG34_LoopsWrong-4                  	   10000	   5757715 ns/op	27121293 B/op	      30 allocs/op
+Benchmark_GTG34_MoreCase_10-4                 	  500000	      2355 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_MoreCase_10-4                 	  500000	      2376 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_MoreCase_10-4                 	  500000	      2601 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_MoreCase_10-4                 	  500000	      2631 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_MoreCase_10-4                 	  500000	      2329 ns/op	    2992 B/op	      29 allocs/op
+Benchmark_GTG34_MoreCase_100-4                	   20000	     91420 ns/op	  287040 B/op	     299 allocs/op
+Benchmark_GTG34_MoreCase_100-4                	   10000	    159965 ns/op	  287040 B/op	     299 allocs/op
+Benchmark_GTG34_MoreCase_100-4                	   20000	     98490 ns/op	  287040 B/op	     299 allocs/op
+Benchmark_GTG34_MoreCase_100-4                	   20000	    101566 ns/op	  287040 B/op	     299 allocs/op
+Benchmark_GTG34_MoreCase_100-4                	   20000	     89805 ns/op	  287040 B/op	     299 allocs/op
+Benchmark_GTG34_MoreCase_1000-4               	     200	   6954871 ns/op	28606400 B/op	    2999 allocs/op
+Benchmark_GTG34_MoreCase_1000-4               	     200	   7319554 ns/op	28606402 B/op	    2999 allocs/op
+Benchmark_GTG34_MoreCase_1000-4               	     200	   7300634 ns/op	28606401 B/op	    2999 allocs/op
+Benchmark_GTG34_MoreCase_1000-4               	     200	   7566790 ns/op	28606402 B/op	    2999 allocs/op
+Benchmark_GTG34_MoreCase_1000-4               	     200	   7010000 ns/op	28606400 B/op	    2999 allocs/op
+PASS
+ok  	github.com/asserchiu/go-utils/strconcator	320.362s
